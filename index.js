@@ -1,16 +1,17 @@
 var place = 1
-function takeANumber(line) {
-  
+function takeANumber(line) 
+{
   place++
   line.push(place)
-  
   return `Welcome, you are number ${place}.`
 }
 
 function nowServing(line) {
-  if (line.length === 0) { return "There is nobody waiting to be served!" 
-} else {
-  return `Currently serving ${line.shift()}.`
+  if (line.length === 0) 
+  { return "There is nobody waiting to be served!" 
+} 
+  else 
+  {return `Currently serving ${line.shift()}.`
 }
 }
 
